@@ -1,8 +1,6 @@
 torch
-fairscale
-fire
-sentencepiece
 langchain
-# openai
 faiss-cpu
 tiktoken
+beautifulsoup4
+chromadb

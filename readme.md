@@ -14,4 +14,6 @@ pip install langchain
 pip3 install torch
 pip install transformers
 CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python
+pip install beautifulsoup4
+pip install chromadb
 ```
