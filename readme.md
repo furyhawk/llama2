@@ -68,9 +68,14 @@ pip install transformers
 CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python
 pip install beautifulsoup4
 pip install chromadb
+pip install lark
 ```
 
 ## Learning
 
 * default context size for model is 512 tokens. Change it to 2048 tokens.
 * `zephyr-7b-beta.Q8_0.gguf` is definately more useful than `zephyr-7b-beta.Q4_K_M.gguf`
+
+## Roadblocks
+
+* Deep coupling of `langchain` and `openai` api. `create_conversational_retrieval_agent` for example does not work with `llama-cpp-python`. `SelfQueryRetriever.from_llm` encounter JSON decoding error.
