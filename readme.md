@@ -71,6 +71,14 @@ pip install chromadb
 pip install lark
 ```
 
+```sh
+pip install -U openai-whisper
+brew install ffmpeg
+pip install torchaudio
+pip install scipy
+pip install ipywidgets
+pip install matplotlib
+```
 ## Learning
 
 * default context size for model is 512 tokens. Change it to 2048 tokens.

@@ -5,3 +5,8 @@ tiktoken
 beautifulsoup4
 chromadb
 lark
+pandas
+torchaudio
+scipy
+ipywidgets
+matplotlib
