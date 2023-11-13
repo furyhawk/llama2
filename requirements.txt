@@ -12,3 +12,5 @@ ipywidgets
 matplotlib
 pyaudio
 keyboard
+fastapi
+uvicorn
