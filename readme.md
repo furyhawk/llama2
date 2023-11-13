@@ -79,6 +79,35 @@ pip install scipy
 pip install ipywidgets
 pip install matplotlib
 ```
+
+
+## whisper.cpp
+
+```sh
+pip install ane_transformers
+pip install openai-whisper
+pip install coremltools
+```
+
+* Generate a Core ML model. For example, to generate a base.en model, use:
+
+```sh
+./models/generate-coreml-model.sh base.en
+```
+
+This will generate the folder models/ggml-base.en-encoder.mlmodelc
+
+```sh
+# using Makefile
+make clean
+WHISPER_COREML=1 make -j
+
+# using CMake
+cmake -B build -DWHISPER_COREML=1
+cmake --build build -j --config Release
+```
+
+
 ## Learning
 
 * default context size for model is 512 tokens. Change it to 2048 tokens.
