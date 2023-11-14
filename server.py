@@ -16,7 +16,8 @@ VAD_FILTER = True
 
 def create_whisper_model():
     import whisper
-    whisper = whisper.load_model("base.en")
+
+    whisper = whisper.load_model(MODEL_TYPE)
     print("Loaded model")
     return whisper
 

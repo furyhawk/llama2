@@ -107,6 +107,10 @@ cmake -B build -DWHISPER_COREML=1
 cmake --build build -j --config Release
 ```
 
+ffmpeg
+```sh
+conda install -c conda-forge 'ffmpeg<7'
+```
 
 ## Learning
 
